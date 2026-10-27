@@ -1,0 +1,89 @@
+/* General Body Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* User Story 5 & Tests 15-18: Form Container */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+  color: #1e293b;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* User Story 6 & Tests 19: Label Styles */
+label {
+  display: block;
+  margin: 0 0 8px 0;     /* Proper shorthand margin and font color */
+  color: #475569;        /* Font color */
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* User Story 7 & Tests 20-21: Inputs & Textarea Styles */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* User Story 8 & Tests 22-23: Button Styles */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* User Story 9 & Test 24: Button Hover Effect */
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:active {
+  transform: scale(0.99);
+}
